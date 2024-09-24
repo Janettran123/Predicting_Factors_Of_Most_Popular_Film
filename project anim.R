@@ -78,3 +78,12 @@ logis<- glm(popularity~ vote_average + vote_count +runtime + budget, data = adve
             family = 'poisson')
 summary(logis)
 exp(coef(logis))
+
+
+# from this analysis, we can conclude that revenue and budget 
+# do not have a strong correlation with popularity 
+# however we can conclude that having a higher voting average increases the odds
+# and a higher vote count and runtime also increases the chances 
+
+# from this analysis, possible business strategy suggestions would be to encourage
+# customer voting participation, higher ratings, and longer runtime for movies. 
